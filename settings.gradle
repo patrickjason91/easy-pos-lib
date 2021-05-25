@@ -1,0 +1,4 @@
+include ':AndroidLibrary'
+include ':BaseLibrary'
+include ':app'
+rootProject.name = "EasyPOSLib"
