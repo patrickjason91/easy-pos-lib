@@ -9,10 +9,6 @@ import java.io.ByteArrayOutputStream;
 import io.patrickjasonlim.easyposlib.base.BitImage;
 import io.patrickjasonlim.easyposlib.base.Utils;
 
-/**
- * Created by patricklim on 02/08/2017.
- */
-
 public class BitmapUtils {
 
     public static final int WIDTH_THERMAL_PRINTER = 280; // 240 as of now, ISSUE: if bitmap height exceeds 256, error in printer

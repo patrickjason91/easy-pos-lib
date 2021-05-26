@@ -57,8 +57,8 @@ public class BluetoothPrinterHandler extends BasePrinterHandler {
 
             }
 
-            BTPouchPrinterInterface btPouchPrinter = new BTPouchPrinterInterface(mClientInputStream, mClientOutputStream);
-            EscPosPrinter printer = new EscPosPrinter(btPouchPrinter);
+            BTPrinterInterface btPrinter = new BTPrinterInterface(mClientInputStream, mClientOutputStream);
+            EscPosPrinter printer = new EscPosPrinter(btPrinter);
             setEscPosPrinter(printer);
 
             Log.d(TAG, "Bluetooth Socket connected! Input stream is " + mClientInputStream + ", output stream is : " + mClientOutputStream);
@@ -74,8 +74,8 @@ public class BluetoothPrinterHandler extends BasePrinterHandler {
 //            mClientInputStream = clientSocket.getInputStream();
 //            mClientOutputStream = clientSocket.getOutputStream();
 //
-//            BTPouchPrinterInterface btPouchPrinter = new BTPouchPrinterInterface(mClientInputStream, mClientOutputStream);
-//            printer = new EscPosPrinter(btPouchPrinter);
+//            BTPrinterInterface btPrinter = new BTPrinterInterface(mClientInputStream, mClientOutputStream);
+//            printer = new EscPosPrinter(btPrinter);
 //
 //            Log.d(TAG, "Bluetooth Socket connected! Input stream is " + mClientInputStream + ", output stream is : " + mClientOutputStream);
 //

@@ -11,12 +11,12 @@ import io.patrickjasonlim.easyposlib.base.PrintBuffer;
 import io.patrickjasonlim.easyposlib.base.PrinterInterface;
 import io.patrickjasonlim.easyposlib.base.Utils;
 
-public class BTPouchPrinterInterface implements PrinterInterface {
-    private static final String TAG = BTPouchPrinterInterface.class.getSimpleName();
+public class BTPrinterInterface implements PrinterInterface {
+    private static final String TAG = BTPrinterInterface.class.getSimpleName();
     private InputStream mInputStream;
     private OutputStream mOutputStream;
 
-    public BTPouchPrinterInterface(InputStream is, OutputStream os) {
+    public BTPrinterInterface(InputStream is, OutputStream os) {
         mInputStream = is;
         mOutputStream = os;
     }

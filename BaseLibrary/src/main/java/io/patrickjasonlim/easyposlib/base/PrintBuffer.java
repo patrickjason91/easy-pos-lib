@@ -28,7 +28,7 @@ public class PrintBuffer {
 
     public static class Builder {
 
-        private static PrintBuffer buff;
+        private PrintBuffer buff;
 
         public Builder() {
             buff = new PrintBuffer();
